@@ -7,9 +7,9 @@ section .data
 
 section .text
 _start:
-    mov al, [a]          ; Завантажуємо a в al
-    add al, [c]          ; Додаємо c до al
-    sub al, [b]          ; Віднімаємо a від al
+    mov al, [b]          ; Завантажуємо b в al
+    sub al, [c]          ; Віднімаємо c від al
+    add al, [a]          ; Додаємо a до al
 
     ; Перетворення результату в ASCII символ (для однозначних чисел)
     add al, 30h          ; Перетворюємо число в ASCII символ
